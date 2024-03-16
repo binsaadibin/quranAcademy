@@ -20,15 +20,6 @@
     /* position: relative;
     justify-content: space-around; */
 }
-/* .SocialIcons{
-  margin-left: 190px;
-  border: 6px  solid green;
-  width: 200px !important; */
-/* }
-.dateAndTime{
-  margin-left: -20px;
-} */
-/* topHeader.module.css */
 
   @media (min-width: 375px) and (max-width:667px) {
     .TopHeader{

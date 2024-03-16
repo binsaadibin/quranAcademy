@@ -13,7 +13,7 @@ function TopHeader() {
         <div className={`col ${topheaderStyles.dateAndTime}`}>
           <DateAndTime />
         </div>
-        <div className={`col ${topheaderStyles.tasmia}`}>
+        <div className={`col-md-6 ${topheaderStyles.tasmia}`}>
          <Tasmia/>
         </div>
         <div className={`col ${topheaderStyles.SocialIcons}`}>
