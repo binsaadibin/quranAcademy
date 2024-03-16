@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+:root{
+    --bg-color:#ffffff;
+    --second-bg-color:#f8f8f8;
+    --text-color:#212565;
+    --main-color:#3b9fcd;
+    --secondry-color:#803589;
+}
+
+ 
+
+body{
+    overflow-x: hidden;
+} 
+h1{
+    font-family: MuseoSans-500;
+    font-weight: 500;
+    text-align: center;
+    font-size: 35px;
+    line-height: 40px;
+    color: var(--secondry-color);
+}
+h2{
+    font-size: 22px;
+    font-family: Cairo, sans-serif;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+.card-body p{
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--main-color);
+    font-weight: 600;
+    font-family: Cairo, sans-serif;
+}
+.card h5{
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--main-color);
+    font-weight: 600;
+    font-family: Cairo, sans-serif;
+}
+p{
+    font-family: MuseoSans-500;
+    font-size: 17px;
+    text-align: center;
+   color: var(--text-color);
+    font-weight: 400;
+    line-height: 22px;
+}
+section{
+    padding: 30px 100px !important;
+}
+
+@media (min-width:375px) and (max-width:667px){
+    h1{
+        font-family: MuseoSans-500;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 40px;
+        color: var(--secondry-color);
+    }
+    .card-body p{
+        font-size: 20px;
+        line-height: 24px;
+        color: var(--main-color);
+        font-weight: 600;
+        font-family: Cairo, sans-serif;
+    }
+    .card h5{
+        font-size: 20px;
+        line-height: 24px;
+        color: var(--main-color);
+        font-weight: 600;
+        font-family: Cairo, sans-serif;
+    }
+    p{
+        font-family: MuseoSans-500;
+        font-size: 17px;
+        color: var(--text-color); 
+        font-weight: 400;
+        line-height: 22px;
+        text-align: justify;
+        word-spacing: 1px;
+    }
+    section{
+        padding: 30px 30px !important;
+    }
+    
+}

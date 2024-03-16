@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+:root{
+    --bg-color:#ffffff;
+    --second-bg-color:#f8f8f8;
+    --text-color:#212565;
+    --main-color:#3b9fcd;
+    --secondry-color:#803589;
+}
+
+.adultsMainHeading {
+    position: relative;
+    background-image: url('/pexels-abdullah-ghatasheh-2608353.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 0px;
+    color: var(--bg-color);
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 100px 0px;
+    font-family: 'Cairo', sans-serif;
+  }
+  
+  .adultsMainHeading::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
+  }
+
+
+  @media (min-width:375px) and (max-width:667px) {
+    .adultsMainHeading {
+        position: relative;
+        background-image: url('/AdobeStock_332447389-1200x400.webp');
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        color:var(--bg-color);
+        font-size: 25px;
+        font-weight: 600;
+        height: 200px;
+        letter-spacing: 2px;
+        line-height: 25px;
+        padding: 70px 0px;
+        margin-bottom: 0px;
+        font-family: 'Cairo', sans-serif;
+      }
+      
+      .adultsMainHeading::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
+      }
+    }
+
+.heading{
+    text-align: left;
+}
+.text{
+    text-align: justify !important;
+}
+
+ @media (min-width:375px) and (max-width:667px) {
+    .heading{
+        text-align: center;
+        padding: 0px;
+        font-size: 25px;
+    }
+    .text{
+        text-align: justify !important;
+    }
+    }
+
+/* second section of  adult page */
+
+.secondSection{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 0px;
+    margin-bottom: 0px;
+} 
+.secondSectionRow{
+    padding: 0px;
+    margin: 0px;
+}   
+.secondSectionRow p{
+   margin-top: 20px;
+
+} 
+.secondSectionCard{
+    padding: 0px;
+    background-color: var(--main-color);
+    margin: 0px;
+    height: 300px;
+    padding: 10px 10px;
+border: 3px solid var(--bg-color);
+   border-radius: 10px;
+   padding: 10px;
+}
+.secondSectionList li{
+        color: var(--bg-color);
+        line-height: 22x;
+        font-family: MuseoSans-500 !important;
+        text-align: left;
+        font-size: 17px !important;
+        word-spacing: 0px;
+        font-weight: 400 !important    
+}
+
+@media (min-width:375px) and (max-width:667px) {
+    .secondSection{
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    } 
+    .secondSectionRow{
+        padding: 0px;
+        margin: 0px;
+    }   
+    .secondSectionRow p{
+       margin-top: 20px;
+    
+    } 
+    .secondSectionCard{
+        padding: 0px;
+        background-color: var(--main-color);
+        margin: 0px;
+        height: 300px;
+        padding: 10px 10px;
+        border: 3px solid var(--bg-color);
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .secondSectionList li{
+            color: var(--bg-color);
+            line-height: 22x;
+            font-family: MuseoSans-500 !important;
+            text-align: left;
+            font-size: 17px !important;
+            word-spacing: 0px;
+            font-weight: 400 !important    
+    }
+    
+    }
+
+
+
+    /* third section of  adult page */
+.secondSection{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 0px;
+    margin-bottom: 0px;
+} 
+.secondSectionRow{
+    padding: 0px;
+    margin: 0px;
+}   
+.secondSectionRow p{
+   margin-top: 20px;
+
+} 
+.secondSectionCard{
+    padding: 0px;
+    background-color: var(--main-color);
+    margin: 0px;
+    height: 300px;
+    padding: 10px 10px;
+border: 3px solid var(--bg-color);
+   border-radius: 10px;
+   padding: 10px;
+}
+.secondSectionList li{
+        color: var(--bg-color);
+        line-height: 22x;
+        font-family: MuseoSans-500 !important;
+        text-align: left;
+        font-size: 17px !important;
+        word-spacing: 0px;
+        font-weight: 400 !important    
+}
+
+
+    /* third section of  adult page */
+
+    /* .thirdSection{
+        border: 3px solid red;
+    }  */
+    .thirdSectionRow{
+        padding: 0px;
+        margin: 0px;
+    }   
+    .thirdSectionRow p{
+       margin-top: 20px;
+    
+    } 
+    .thirdSectionCard{
+        padding: 0px;
+        background-color: var(--main-color);
+        margin: 0px;
+        height: auto;
+        padding: 10px 10px;
+        border: 3px solid var(--bg-color);
+       border-radius: 10px;
+    }
+    .thirdSectionList li{
+            color: var(--bg-color);
+            line-height: 22x;
+            font-family: MuseoSans-500 !important;
+            text-align: left;
+            font-size: 17px !important;
+            word-spacing: 0px;
+            font-weight: 400 !important    
+    }
+    .enroll{
+        border: 2px solid var(--bg-color);
+        box-shadow: 10px 10px 15px var(--secondry-color);
+        border-radius: 5px;
+        padding: 40px 10px;
+        background-color: var(--secondry-color);
+        color: var(--bg-color);
+        font-family: 'Cairo', sans-serif;
+        font-weight: 700;
+        margin: 20px 0px;
+        font-size: 36px;
+    }
+    .enroll button{
+        background-color: var(--main-color);
+        border: 3px solid var(--bg-color);
+        padding: 5px 30px;
+        font-size: 20px;
+        color: var(--bg-color);
+        border-radius: 50px;
+    }
+
+    /* fourth section of  adult page */
+    .fourthSection{
+        border: 3px solid red;
+    } 
+
+.fourthSectionBox{
+    border: 2px solid var(--secondry-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 20px 10px 10px 10px;
+}   
+.fourthSectionText {
+    text-align: justify;
+    line-height: 22px;
+}
+.fourthSectionText span{
+   font-size: 20px;
+   font-weight: 500;
+   color: var(--secondry-color);
+}
+.fourthSectionLine{
+   color: var(--main-color);
+}
+    
+
+
+
+/* .fourthSectionRow{
+    border: 4px solid yellow;
+    padding: 0px;
+    margin: 0px;
+}   
+.fourthSectionRow p{
+   margin-top: 20px;
+
+} 
+.fourthSectionCard{
+    padding: 0px;
+    background-color: var(--main-color);
+    margin: 0px;
+    height: auto;
+    padding: 10px 10px;
+border: 3px solid var(--bg-color);
+   border-radius: 10px;
+}
+.fourthSectionCardText{
+   text-align: justify;
+   color: var(--bg-color);
+}
+.fourthSectionList li{
+        color: var(--bg-color);
+        line-height: 22x;
+        font-family: MuseoSans-500 !important;
+        text-align: left;
+        font-size: 17px !important;
+        word-spacing: 0px;
+        font-weight: 400 !important    
+} */

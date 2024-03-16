@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+:root{
+    --bg-color:#ffffff;
+    --second-bg-color:#f8f8f8;
+    --text-color:#535752;
+    --main-color:#3b9fcd;
+    --secondry-color:#803589;
+}

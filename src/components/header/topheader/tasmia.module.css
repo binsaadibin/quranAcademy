@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+:root{
+    --bg-color:#ffffff;
+    --second-bg-color:#f8f8f8;
+    --text-color:#212565;
+    --main-color:#3b9fcd;
+    --secondry-color:#803589;
+}
+
+.tasmia {
+    font-size: 20px;
+    color:var(--second-bg-color);
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+}
+@media (min-width: 375px) and (max-width:667px) {
+    .tasmia {
+        font-size:15px;
+        color:var(--second-bg-color);
+        margin: 0px 10px;
+        direction: rtl;
+        font-family: 'Cairo', sans-serif;
+    }
+}

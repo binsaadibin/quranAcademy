@@ -1,0 +1,51 @@
+/* YourComponent.module.css */
+
+.third_box_poster {
+ border: none;
+ padding: 0px;
+ margin: 0px;
+}
+/* .container{
+  padding-left: 200px;
+} */
+
+.third_box_poster .box {
+  margin-top: 30px;
+  width: 270px;
+  height: 300px;
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  border: 2px solid var(--second-bg-color);
+  font-size: 20px;
+  padding: 10px 50px 60px 50px;
+}
+.pictures{
+  height: 200px;
+  width: 150px;
+}
+
+.third_box_poster .box p {
+  color: var(--second-bg-color);
+  font-weight: 550;
+  font-size: 18px;
+}
+
+.third_box_poster h1 {
+  color: var(--secondry-color);
+}
+
+.third_box_poster p {
+  color: var(--second-bg-color);
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media (min-width: 0px) and (max-width: 700px) {
+  .third_box_poster .box {
+    height: 320px;
+    width: 310px;
+    padding: 30px;
+  }
+}
