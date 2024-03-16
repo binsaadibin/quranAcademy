@@ -9,7 +9,7 @@ function Tasmia() {
 
   useEffect(() => {
     // Fetch data from a Quranic API (replace with a real API endpoint)
-    fetch('http://api.alquran.cloud/v1/surah/1/ar.alafasy')
+    fetch('https://api.alquran.cloud/v1/surah/1/ar.alafasy')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
