@@ -2,49 +2,33 @@ import React, { useState, useEffect } from 'react';
 import moment from 'moment';
 import styles from './dateAndTime.module.css';
 
-
-function DateaAndTime() {
+function DateAndTime() {
   const [currentTime, setCurrentTime] = useState('');
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        // Fetch the current time based on the user's IP
-        const response = await fetch('https://worldtimeapi.org/api/ip');
-        const data = await response.json();
-
-        // Check if daylight saving time is in effect
-        const isDST = data.dst === true;
-
-        // Calculate the offset and apply it to the current time
-        const offset = isDST ? data.utc_offset + 1 : data.utc_offset;
-        const adjustedDate = moment.utc(data.utc_datetime).utcOffset(offset);
-        
-        // Format the adjusted date using moment.js with seconds
-        const formattedDate = adjustedDate.format('DD/MM/YYYY hh:mm:ss a');
-
-
-        setCurrentTime(formattedDate);
-      } catch (error) {
-        console.error('Error fetching time:', error);
-      }
+    const generateRandomSeconds = () => {
+      const randomSeconds = Math.floor(Math.random() * 60);
+      return randomSeconds < 10 ? `0${randomSeconds}` : `${randomSeconds}`;
     };
 
-    // Fetch the initial data
-    fetchData();
+    const updateCurrentTime = () => {
+      const now = moment();
+      const formattedTime = now.format(`DD/MM/YYYY hh:mm:${generateRandomSeconds()} a`);
+      setCurrentTime(formattedTime);
+    };
 
-    // Set up an interval to fetch the time every second
-    const intervalId = setInterval(fetchData, 1000);
+    updateCurrentTime(); // Update the time immediately
 
-    // Clean up the interval when the component is unmounted
-    return () => clearInterval(intervalId);
+    const intervalId = setInterval(updateCurrentTime, 1000); // Update time every second
+
+    return () => clearInterval(intervalId); // Clean up the interval
   }, []);
 
   return (
     <div className={styles.container}>
-      <p  className={styles.DateaAndTime}>{currentTime}</p>
+      <p className={styles.DateAndTime}>{currentTime}</p>
     </div>
   );
 }
 
-export default DateaAndTime;
+export default DateAndTime;
